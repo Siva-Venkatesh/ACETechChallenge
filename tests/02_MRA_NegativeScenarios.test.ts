@@ -344,6 +344,9 @@ test.describe("Market Readiness Assistance grant booking", () => {
       )
     ).toBeVisible();
 
+ 
+    
+    
     // Validating file size which is more than 20MB _ exceeding limit
     const fileChooserPromise = page.waitForEvent("filechooser");
     await page
