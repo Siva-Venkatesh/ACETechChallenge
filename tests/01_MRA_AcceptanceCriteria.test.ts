@@ -81,6 +81,7 @@ test.describe("Market Readiness Assistance grant booking", () => {
     await page.locator("//button[@id='keyPage-form-button']").click();
   });
 
+
   //Check Your Eligibility starts here..
   test("AC_02_Check Your Eligibility", async () => {
     //AC 1: The section should contain 5 questions
@@ -126,6 +127,7 @@ test.describe("Market Readiness Assistance grant booking", () => {
 
     await page.locator("//button[@id='next-btn']").click();
   });
+
 
   //User Story 2 – Contact Details Section starts here..
   test("AC_03_Provide Your Contact Details", async () => {
@@ -304,6 +306,7 @@ test.describe("Market Readiness Assistance grant booking", () => {
     await page.waitForTimeout(3000);
   });
 
+
   //Provide Details of Costs starts here..
   test("AC_06_Provide Details of Costs", async () => {
     await page
@@ -363,6 +366,7 @@ test.describe("Market Readiness Assistance grant booking", () => {
     await page.waitForTimeout(3000);
   });
 
+  
   //User Story 3 (EPIC) – Form Submission - Declare & Acknowledge Term starts here..
   test("AC_07_Declare and Acknowledge Terms", async () => {
 

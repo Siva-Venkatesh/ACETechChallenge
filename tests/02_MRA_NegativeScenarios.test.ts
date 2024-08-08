@@ -81,6 +81,7 @@ test.describe("Market Readiness Assistance grant booking", () => {
     await page.locator("//button[@id='keyPage-form-button']").click();
   });
 
+
   //Check Your Eligibility starts here..
   test("AC_02_Check Your Eligibility", async () => {
     //AC 1: The section should contain 5 questions
@@ -112,6 +113,7 @@ test.describe("Market Readiness Assistance grant booking", () => {
 
     await page.locator("//button[@id='next-btn']").click();
   });
+
 
   //Provide Your Contact Details starts here..
   test("AC_03_Provide Your Contact Details", async () => {
@@ -160,6 +162,7 @@ test.describe("Market Readiness Assistance grant booking", () => {
 
     await page.locator("//button[@id='next-btn']").click();
   });
+
 
   //Submit Your Proposal starts here..
   test("AC_04_Submit Your Proposal", async () => {
@@ -234,6 +237,7 @@ test.describe("Market Readiness Assistance grant booking", () => {
     await page.locator("//button[@id='next-btn']").click();
     await page.waitForTimeout(3000);
   });
+
 
   //Explain The Business Impact starts here..
   test("AC_05_Business Impact", async () => {
@@ -311,6 +315,7 @@ test.describe("Market Readiness Assistance grant booking", () => {
     await page.locator("//button[@id='next-btn']").click();
     await page.waitForTimeout(3000);
   });
+
 
   //Provide Details of Costs starts here..
   test("AC_06_Provide Details of Costs", async () => {
@@ -404,6 +409,7 @@ test.describe("Market Readiness Assistance grant booking", () => {
     await page.waitForTimeout(3000);
   });
 
+  
   //Declare & Acknowledge Term starts here..
   test("AC_07_Declare and Acknowledge Terms", async () => {
     await page
