@@ -468,5 +468,6 @@ test.describe("Market Readiness Assistance grant booking", () => {
     await page.screenshot({
       path: "testData/screenshots/unCheckedAcknowledge.png",
     });
+    await page.waitForTimeout(3000);
   });
 });

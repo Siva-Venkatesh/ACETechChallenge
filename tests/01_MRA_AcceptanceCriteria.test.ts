@@ -433,10 +433,7 @@ test.describe("Market Readiness Assistance grant booking", () => {
       "//h3[normalize-space()='Your application has been submitted.']"
     );
     await expect(submitVerification).toHaveValue(
-      "Your application has been submitted",
-      {
-        timeout: 3000,
-      }
-    );
+      "Your application has been submitted");
+    await page.waitForTimeout(3000);
   });
 });
